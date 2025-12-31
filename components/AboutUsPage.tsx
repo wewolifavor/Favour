@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { PROJECTS, SKILLS } from '../constants';
+import { PROJECTS, SKILLS } from '../constants.tsx';
 
 interface AboutUsPageProps {
   initialSection?: string;

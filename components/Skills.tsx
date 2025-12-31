@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { SKILLS } from '../constants';
-import { Skill } from '../types';
+import { SKILLS } from '../constants.tsx';
+import { Skill } from '../types.ts';
 
 interface SkillsProps {
   onSkillClick: (skill: Skill) => void;

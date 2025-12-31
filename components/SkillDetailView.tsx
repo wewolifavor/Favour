@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react';
-import { Skill } from '../types';
+import { Skill } from '../types.ts';
 
 interface SkillDetailViewProps {
   skill: Skill;

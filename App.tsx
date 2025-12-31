@@ -1,16 +1,16 @@
 
 import React, { useState, useEffect } from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import About from './components/About';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
-import Contact from './components/Contact';
-import ContactPage from './components/ContactPage';
-import Footer from './components/Footer';
-import SkillDetailView from './components/SkillDetailView';
-import AboutUsPage from './components/AboutUsPage';
-import { Skill } from './types';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import About from './components/About.tsx';
+import Skills from './components/Skills.tsx';
+import Projects from './components/Projects.tsx';
+import Contact from './components/Contact.tsx';
+import ContactPage from './components/ContactPage.tsx';
+import Footer from './components/Footer.tsx';
+import SkillDetailView from './components/SkillDetailView.tsx';
+import AboutUsPage from './components/AboutUsPage.tsx';
+import { Skill } from './types.ts';
 
 const App: React.FC = () => {
   const [activeSection, setActiveSection] = useState('home');

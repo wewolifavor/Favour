@@ -58,8 +58,8 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
           <h1 className="text-4xl md:text-6xl font-black italic tracking-tighter uppercase">
             Get In <span className="text-blue-500">Touch</span>
           </h1>
-          <p className="text-slate-400 text-lg max-w-2xl mx-auto">
-            Ready to start a new project or just want to say hi? Send me a message and I'll get back to you as soon as possible.
+          <p className="text-slate-400 text-lg max-w-2xl mx-auto font-light">
+            Ready to start a new project or just want to say hi? I'm available for work in Ghana and remotely worldwide.
           </p>
         </div>
 
@@ -71,7 +71,7 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                 <i className="fa-solid fa-envelope"></i>
               </div>
               <div>
-                <h3 className="font-bold text-white uppercase text-xs tracking-widest">Email</h3>
+                <h3 className="font-bold text-white uppercase text-[10px] tracking-[0.2em]">Email Me</h3>
                 <p className="text-slate-400 text-sm">wewolifavor@gmail.com</p>
               </div>
             </div>
@@ -80,43 +80,43 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
                 <i className="fa-solid fa-location-dot"></i>
               </div>
               <div>
-                <h3 className="font-bold text-white uppercase text-xs tracking-widest">Location</h3>
+                <h3 className="font-bold text-white uppercase text-[10px] tracking-[0.2em]">Based In</h3>
                 <p className="text-slate-400 text-sm">Accra, Ghana</p>
               </div>
             </div>
             
-            <div className="flex flex-wrap justify-center gap-3 pt-4">
+            <div className="flex flex-wrap justify-center gap-4 pt-4">
               <a 
                 href="https://github.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
+                className="w-12 h-12 rounded-xl glass border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
               >
-                <i className="fa-brands fa-github"></i>
+                <i className="fa-brands fa-github text-xl"></i>
               </a>
               <a 
                 href="https://www.linkedin.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
+                className="w-12 h-12 rounded-xl glass border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
               >
-                <i className="fa-brands fa-linkedin"></i>
+                <i className="fa-brands fa-linkedin text-xl"></i>
               </a>
               <a 
                 href="https://x.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
+                className="w-12 h-12 rounded-xl glass border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
               >
-                <i className="fa-brands fa-twitter"></i>
+                <i className="fa-brands fa-twitter text-xl"></i>
               </a>
               <a 
                 href="https://www.tiktok.com/@favourplays" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="w-10 h-10 rounded-xl glass flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
+                className="w-12 h-12 rounded-xl glass border border-white/5 flex items-center justify-center text-slate-400 hover:text-white hover:border-blue-500/30 transition-all"
               >
-                <i className="fa-brands fa-tiktok"></i>
+                <i className="fa-brands fa-tiktok text-xl"></i>
               </a>
             </div>
           </div>
@@ -126,47 +126,47 @@ const ContactPage: React.FC<ContactPageProps> = ({ onBack }) => {
             <form onSubmit={handleSubmit} className="glass p-8 md:p-10 rounded-[2.5rem] border border-white/10 space-y-6 shadow-2xl">
               <div className="grid sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-slate-400 px-1">Name</label>
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-slate-500 px-1">Full Name</label>
                   <input 
                     required
                     type="text" 
-                    placeholder="John Doe"
+                    placeholder="Wewoli Favor"
                     value={formState.name}
                     onChange={(e) => setFormState({...formState, name: e.target.value})}
-                    className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all text-white placeholder:text-slate-600"
+                    className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all text-white placeholder:text-slate-700"
                   />
                 </div>
                 <div className="space-y-2">
-                  <label className="text-xs font-bold uppercase tracking-widest text-slate-400 px-1">Email</label>
+                  <label className="text-[10px] font-bold uppercase tracking-widest text-slate-500 px-1">Email Address</label>
                   <input 
                     required
                     type="email" 
-                    placeholder="john@example.com"
+                    placeholder="hello@favour.com"
                     value={formState.email}
                     onChange={(e) => setFormState({...formState, email: e.target.value})}
-                    className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all text-white placeholder:text-slate-600"
+                    className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all text-white placeholder:text-slate-700"
                   />
                 </div>
               </div>
               <div className="space-y-2">
-                <label className="text-xs font-bold uppercase tracking-widest text-slate-400 px-1">Message</label>
+                <label className="text-[10px] font-bold uppercase tracking-widest text-slate-500 px-1">Message Body</label>
                 <textarea 
                   required
                   rows={5} 
-                  placeholder="How can I help you?"
+                  placeholder="How can we team up?"
                   value={formState.message}
                   onChange={(e) => setFormState({...formState, message: e.target.value})}
-                  className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all text-white placeholder:text-slate-600 resize-none"
+                  className="w-full px-5 py-4 rounded-2xl bg-white/5 border border-white/10 focus:border-blue-500 focus:outline-none focus:ring-1 focus:ring-blue-500 transition-all text-white placeholder:text-slate-700 resize-none"
                 ></textarea>
               </div>
               <button 
                 type="submit" 
                 className="w-full py-5 bg-blue-600 hover:bg-blue-700 text-white rounded-2xl font-bold uppercase tracking-widest transition-all shadow-xl shadow-blue-500/20 active:scale-95 flex items-center justify-center gap-3 group"
               >
-                Send Message
+                Shoot Your Message
                 <i className="fa-solid fa-paper-plane text-sm group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform"></i>
               </button>
-              {status && <p className="text-center text-sm font-bold text-blue-400 animate-pulse mt-4 uppercase tracking-tighter">{status}</p>}
+              {status && <p className="text-center text-sm font-bold text-blue-400 animate-pulse mt-4 uppercase tracking-tighter italic">{status}</p>}
             </form>
           </div>
         </div>
